@@ -1,66 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой макет</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body> 
-    <div class="main">
-        <div class="navbar">
-      <ul>
-        <li><a href="" class="link">menu 1</a></li>
-        <li><a href="">menu 2</a></li>
-        <li><a href="">menu 3</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="sanjar, cv, resume">
+  <meta name="description" content="Это сайт - резюме">
+  <link rel="stylesheet" href="style.css">
+  <title>Sanjar Resume</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="info">
+      <img src="images.jpg" alt="Владилен Минин" class="avatar">
+
+      <div class="info-text">
+        <h1>Sanjar Kh</h1>
+        <p>Lorem, ipsum. <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor sit amet consectetur
+          adipisicing. <strong>Lorem ipsum dolor sit amet.</strong></p>
+        <p>Lorem ipsum dolor sit amet.<em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam
+            incidunt perspiciatis id aliquid inventore rem dicta accusamus.</em></p>
+
+        <h4>Список социальных сетей:</h4>
+        <a href="" target="_blank">Instagram</a> |
+        <a href="" target="_blank">Telegram</a> |
+        <a href="" target="_blank">Youtube</a>
+      </div>
     </div>
-      <div class="header">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quibusdam sed quis
-          nisi!
-        </p>
-        <button>Read more</button>
+
+    <div class="card bg-green">
+      <h2>Мои хобби</h2>
+
+      <ol class="list">
+        <li>Lorem.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem.</li>
+      </ol>
+    </div>
+
+    <div class="card bg-red">
+      <h2>Опыт работы</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Lorem.</td>
+            <td>20120-2021</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Lorem.</td>
+            <td>20121-2022</td>
+          </tr>
+          <tr></tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem, ipsum.</td>
+          <td>2022 - сейчас</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <form action="/" class="form">
+      <h2>Связаться со мной</h2>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Введите имя">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваш email:</label>
+          <input type="email" id="email" placeholder="Введите email">
+        </div>
       </div>
 
-      <div class="content">
-        <div class="aside">
-          <h2>Lorem ipsum sit amet.</h2>
-          <ul class="sidebar">
-            <li><a href="#">Lorem, ipsum.</a></li>
-            <li><a href="#">Lorem, ipsum.</a></li>
-            <li><a href="#">Lorem, ipsum.</a></li>
-            <li><a href="#">Lorem, ipsum.</a></li>
-            <li><a href="#">Lorem, ipsum.</a></li>
-            
-          </ul>
-        </div>
-        <div class="section">
-          <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis quas libero ipsum
-            debitis illum tempore iure laborum nobis saepe facere nesciunt nulla accusamus, aliquid
-            ducimus labore excepturi quibusdam eius ad illo dolorem dicta velit! Quia distinctio
-            repellat at officia ea quis tempora. Repellat, dicta.
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas doloremque eaque
-            impedit voluptate maiores, iure minima accusamus perferendis nobis. Aperiam earum sed
-            praesentium officia fugiat optio ducimus quasi iusto asperiores.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis quas libero ipsum
-            debitis illum tempore iure laborum nobis saepe facere nesciunt nulla accusamus, aliquid
-            ducimus labore excepturi quibusdam eius ad illo dolorem dicta velit! Quia distinctio
-            repellat at officia ea quis tempora. Repellat, dicta.
-          </p>
-        </div>
+      <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
       </div>
 
-      <div class="footer">footer</div>
-    </div>
-  </body>
+      <input class="btn" type="submit" value="Отправить!">
+    </form>
+
+
+  </div>
+</body>
+
 </html>
